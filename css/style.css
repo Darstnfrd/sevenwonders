@@ -1,0 +1,411 @@
+html, body{
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    }
+
+h1{
+  font-size: 6.25rem !important;
+}
+
+p{
+  font-size:18px;
+}
+
+ol{
+  padding-left: 15px;
+}
+
+.strip{
+  padding-top:60px;
+  color: white;
+}
+
+.strip h3{
+  margin-top: 15px;
+}
+
+.navbar{
+  background-color: #333;
+}
+
+.navbar-nav{
+  display: inline-block;
+  float: none;
+}
+
+.navbar-toggle{
+  color:white;
+}
+
+.navbar-brand, .navbar-nav li a{
+  color: white;
+}
+
+.navbar-brand{
+  font-family: 'Rozha One', serif;
+} 
+
+.navbar-nav li a:hover{
+  color:#333;
+}
+
+.item{
+  margin-top:50px;
+}
+
+.scroll-icon-strip-top{
+  position: relative;
+  text-align:center;
+  width: 100%;
+  top:0;
+  color:#ccc;
+  padding:25px 0;
+  /*background: -webkit-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,1));*/
+  
+}
+
+.scroll-icon-strip{
+  position: absolute;
+  text-align:center;
+  width: 100%;
+  bottom:0;
+  color:white;
+  padding-bottom:100px;
+  padding-top:80px;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,1));
+  
+}
+
+.fill2 .scroll-icon-strip{
+  position: absolute;
+
+  color:#aaa;
+
+  background: transparent;
+}
+
+.scroll-icon:hover{
+  padding-top:10px;
+  padding-bottom:10px;
+  cursor: pointer;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.scroll-icon-strip-top .scroll-icon:hover{
+  padding-top:10px;
+  padding-bottom:0;
+}
+
+#seven .scroll-icon-strip{
+  z-index: 9998;
+  color:white;
+}
+
+.fill h3{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.carousel-inner,.carousel,.item,.container,.fill,.fill2 {
+  position:relative;
+  height:100%;
+  width:100%;
+  background-position:center center;
+  background-size:cover;
+}
+
+.carousel{
+    background: #333;
+}
+
+.fill2{
+  background: white;
+}
+
+.fill2:nth-child(odd){   
+  background: #343a40;
+}
+
+.fill2:nth-child(odd) .strip{   
+  color:white !important;
+}
+
+.fill2 .strip{
+  padding-top: 0;
+  color: #333 !important;
+}
+
+.fill2 .strip h2{
+  margin-top:0;
+}
+
+.vl{
+  position: absolute;
+    border-left: 3px solid #eee;
+    left: 50%;
+    height: 22vw;
+    margin: 0 auto;
+}
+
+.slide-wrapper{display:inline; }
+.slide-wrapper .container{padding:0px;}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner> .item.next ,  .carousel-inner > .item.active.right{ transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;}
+.carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;}
+.carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators{
+position:absolute;
+top:0;
+bottom:0;
+margin:auto;
+height:20px;
+right:10px !important; left:auto !important;
+width:auto;
+text-align: center !important;
+list-style: none;
+padding-left: 0;
+z-index: 15;
+}
+.carousel-indicators li{display:block; margin-bottom:5px; border:1px solid #00a199; }
+.carousel-indicators li.active{margin-bottom:5px; background:#00a199;}
+
+#one .strip, 
+#two .strip,
+#three .strip,
+#four .strip,
+#five .strip,
+#eight .strip{
+  color: #333;
+}
+
+#three .strip,
+#five .strip{
+  text-align: center;
+}
+
+#four .strip,
+#six .strip,
+#seven .strip,
+#eight .strip{
+  text-align:right;
+}
+
+#one{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover; 
+  background-image:url('../img/chichenitza.jpg');
+}
+
+#chichenitza h1, 
+#chichenitza h2,
+#chichenitza h3,
+#chichenitza h4,
+#chichenitza h5{
+  font-family: 'Flamenco', cursive;
+}
+
+#chichenitza .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover; 
+  background-image:url('../img/chichenitzamap.png');
+}
+
+#chichenitza .fill2:nth-child(even){   
+  background-image:url('../img/chichenitzaprint.png');
+  background-repeat: repeat-y;
+}
+
+#two{
+  background-color:#b33f4a;
+  background-position: 50% 30%;
+  background-size: cover;
+  background-image:url('../img/redeemer.jpg');
+}
+
+#redeemer h1,
+#redeemer h2,
+#redeemer h3,
+#redeemer h4,
+#redeemer h5{
+  font-family: 'Bungee Inline', cursive;
+}
+
+#redeemer .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover; 
+  background-image:url('../img/redeemermap.png');
+}
+
+#redeemer .fill2:nth-child(even){   
+  background-image:url('../img/redeemerprint.png');
+  background-repeat: repeat-y;
+}
+
+#three{
+  background-color:#7fc2f4;
+  background-position: 0% 40%;
+  background-size: cover;
+  background-image:url('../img/colosseum.jpg');
+}
+
+#colosseum h1,
+#colosseum h2,
+#colosseum h3,
+#colosseum h4,
+#colosseum h5{
+  font-family: 'Caesar Dressing', cursive;
+}
+
+#colosseum .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover; 
+  background-image:url('../img/colosseummap.png');
+}
+
+#colosseum .fill2:nth-child(even){   
+  background-image:url('../img/colosseumprint.png');
+  background-repeat: repeat-y;
+}
+
+#four{
+  background-color:#e47794;
+  background-position: center;
+  background-size: cover; 
+  background-image:url('../img/tajmahal.jpg');
+}
+
+#tajmahal h1,
+#tajmahal h2,
+#tajmahal h3,
+#tajmahal h4,
+#tajmahal h5{
+  font-family: 'Kumar One', cursive;
+}
+
+#tajmahal .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover; 
+  background-image:url('../img/tajmahalmap.png');
+}
+
+#tajmahal .fill2:nth-child(even){   
+  background-image:url('../img/tajmahalprint.png');
+  background-repeat: repeat-y;
+}
+
+#five{
+  background-color:#e47794;
+  background-position: 0% 25%;
+  background-size: cover; 
+  background-image:url('../img/greatwall.jpg');
+}
+
+#greatwall h1,
+#greatwall h2,
+#greatwall h3,
+#greatwall h4,
+#greatwall h5{
+  font-family: 'Yeon Sung', cursive;
+}
+
+#greatwall .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover;
+  background-image:url('../img/greatwallmap.png');
+}
+
+#greatwall .fill2:nth-child(even){   
+  background-image:url('../img/greatwallprint.png');
+  background-repeat: repeat-y;
+}
+
+#six{
+  background-color:#e47794; 
+  background-image:url('../img/petra.jpg');
+}
+
+#petra h1,
+#petra h2,
+#petra h3,
+#petra h4,
+#petra h5{
+  font-family: 'Aladin', cursive;
+}
+
+#petra .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover;
+  background-image:url('../img/petramap.png');
+} 
+
+#petra .fill2:nth-child(even){   
+  background-image:url('../img/petraprint.png');
+  background-repeat: repeat-y;
+}
+
+#seven{
+  background-color:#e47794; 
+  background-image:url('../img/machupicchu.jpg');
+}
+
+#machupicchu h1,
+#machupicchu h2,
+#machupicchu h3,
+#machupicchu h4,
+#machupicchu h5{
+  font-family: 'Squada One', cursive;
+}
+
+#machupicchu .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover;
+  background-image:url('../img/machupicchumap.png');
+} 
+
+#machupicchu .fill2:nth-child(even){   
+  background-image:url('../img/machupicchuprint.png');
+  background-repeat: repeat-y;
+}
+
+#eight{
+  background-color:#e47794; 
+  background-image:url('../img/pyramid.jpg');
+}
+
+#pyramid h1,
+#pyramid h2,
+#pyramid h3,
+#pyramid h4,
+#pyramid h5{
+  font-family: 'Megrim', cursive;
+}
+
+#pyramid .map{
+  background-color:#48c3af;
+  background-position: top;
+  background-size: cover;
+  background-image:url('../img/pyramidmap.png');
+}
+
+#pyramid .fill2:nth-child(even){   
+  background-image:url('../img/pyramidprint.png');
+  background-repeat: repeat-y;
+}
+
+@media (max-width: 768px){
+.slide-wrapper .container{padding-left:15px; padding-right:15px;}
+}
